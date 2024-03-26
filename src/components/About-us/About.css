@@ -1,0 +1,29 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.about{
+    display: flex;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 45%;
+    margin-top: 100px;
+    
+}
+.parents{
+    height: 80vh;
+    margin-left: 10%;
+    
+    
+
+}
+
+#text1{
+    font-size: 30px;
+    font-Family: 'El Messiri';
+    margin-top: 70px;
+}
+
+.image{
+    width: 200px;
+}

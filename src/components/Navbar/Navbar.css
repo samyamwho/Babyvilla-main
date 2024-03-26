@@ -1,0 +1,84 @@
+.navbar {
+    position: fixed; /* Fix navbar position */
+    top: 0; /* Align navbar to the top */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 15px 2%;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1); /* Shadow properties */
+    z-index: 1000; /* Ensure the navbar stays on top */
+}
+
+
+.logo{
+    width: 170px;
+    cursor: pointer;
+}
+ul{
+    flex:1;
+    list-style-type: none;
+    text-align: center;
+    margin-left: 30%;
+
+}
+
+ul li {
+    display: inline-block;
+    margin: 20px 30px;
+    font-size: 21px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    color: var(--color1);
+    transition: 0.15s ease-in-out;
+    
+}
+
+ul li:hover {
+    /* Underline animation */
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Needed for absolute positioning */
+  
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%; /* Full width of the li */
+      height: 2px; /* Underline height */
+      background-color: #287935; /* Underline color */
+      bottom: -2px; /* Position the underline below the text */
+      left: 0; /* Align the underline with the left edge */
+      opacity: 0; /* Initially invisible */
+      transition: 0.15s ease-in-out;
+    }
+  }
+  
+  ul li:hover::after {
+    opacity: 1; /* Underline becomes visible on hover */
+  }
+
+.toggle-icon{
+    width:40px;
+    margin-right: 40px;
+    cursor: pointer ;
+}
+.dark .navbar{
+    background: #000;
+    color: #fff;
+}
+
+button{
+    margin-top: 0%;
+    background-color: #287935; 
+    padding: 19px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 15px;
+    border-radius: 30px;
+    color: aliceblue;
+   margin-left: 20px;
+   border: none;
+   
+   
+}

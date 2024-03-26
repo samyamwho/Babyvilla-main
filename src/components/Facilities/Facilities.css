@@ -1,0 +1,31 @@
+.parent {
+    display: flex; /* Use flexbox to layout children */
+    justify-content: space-between;
+    
+  }
+  
+  .child {
+    flex: 1; /* Distribute available space equally among the children */
+    margin: 0 150px; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+  }
+  
+  .child img {
+    width: 70%; /* Ensure images take up full width of their container */
+    height: auto; 
+    margin-left: 15%;
+    border-radius: 20px;
+    /* Maintain aspect ratio */
+  }
+  
+  /* Optional: Add additional styling as needed */
+  .child:not(:last-child) {
+    margin-right: -100px; /* Add space between the images */
+  }
+  .text1{
+    font-size: 60px;
+    font-Family: 'El Messiri';
+    text-align: center;
+    margin: 20px;
+    font-weight: 10;
+  }

@@ -1,0 +1,15 @@
+.find-us {
+    text-align: center; /* Center-align the content */
+  }
+  
+  .find-us h1 {
+    display: block; /* Ensure the h1 is displayed as a block element */
+    margin-bottom: 20px;
+    margin-top: 100px; 
+    font-size: 60px;
+    font-Family: 'El Messiri';
+    text-align: center;
+    
+    font-weight: 10;/* Add some bottom margin to create space between the header and the map */
+  }
+  
